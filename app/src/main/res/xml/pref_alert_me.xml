@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference
+        android:title="Alarm"
+        android:summaryOn="On"
+        android:summary="Off"
+        android:defaultValue="false"
+        android:key="@string/key_set_alarm"/>
+    <SeekBarPreference
+        android:title="Max Level"
+        android:max="100"
+        app:showSeekBarValue="true"
+        android:defaultValue="80"
+        android:key="@string/key_Set_Alarm_max"/>
+
+</PreferenceScreen>

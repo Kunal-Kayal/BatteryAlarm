@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.BatteryAlarm.android.batteryalarm">
+    /*
+    permission need for running forground services on Andorid Api>=9
+    */
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:enabled="true"
+        android:icon="@mipmap/ic_battery_alarm"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_battery_alarm_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.ActionBar.Transparent">
+
+
+        <activity android:name="com.BatteryAlarm.android.batteryalarm.PrivacyPolicy"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:parentActivityName="com.BatteryAlarm.android.batteryalarm.MainActivity"/>
+
+        <activity
+            android:name="com.BatteryAlarm.android.batteryalarm.CustomAppIntro"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity
+            android:name="com.BatteryAlarm.android.batteryalarm.AlertMeActivity"
+            android:parentActivityName="com.BatteryAlarm.android.batteryalarm.MainActivity"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <activity
+            android:name="com.BatteryAlarm.android.batteryalarm.MainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <receiver android:name="com.BatteryAlarm.android.batteryalarm.BatteryStateChangeReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver android:name="com.BatteryAlarm.android.batteryalarm.CloseButtonReceiver" />
+
+
+        <service android:name="com.BatteryAlarm.android.batteryalarm.ForegroundService" />
+
+
+    </application>
+
+</manifest>

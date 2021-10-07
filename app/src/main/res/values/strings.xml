@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BatteryAlarm</string>
+    <string name="key_set_alarm">Set_Alarm</string>
+    <string name="key_Set_Alarm_min">Set_Alarm_min</string>
+    <string name="key_Set_Alarm_max">Set_Alarm_max</string>
+    <string name="key_Set_Notification_max">Set_Notification_max</string>
+    <string name="key_Set_Notification_min">Set_Notification_min</string>
+    <string name="key_Set_Notification">Set_Notification</string>
+    <string name="slider_background_color_1">#ffaf49</string>
+    <string name="slider_background_color_2">#df55f2</string>
+    <string name="charge_mode_USB">Battery is Charging via USB</string>
+    <string name="charge_mode_AC">Battery is Charging via AC</string>
+    <string name="charge_mode_wearless">Battery is Charging via Wearless</string>
+    <string name="charge_mode_Unknown">Battery is Charging</string>
+    <string name="battery_discharging">Battery is DisCharging</string>
+    <string name="battery_full">Battery is Full</string>
+    <string name="battery_not_charging">Battery is not Charging</string>
+    <string name="on_battery">On Battery</string>
+    <string name="battery_unit"> mAh</string>
+    <string name="Unknown">Unknown</string>
+    <string name="battery">Battery</string>
+    <string name="battary_capacity">Battary Capacity</string>
+    <string name="health_icon">health icon</string>
+    <string name="alert_me">Alert Me</string>
+    <string name="alart_me_icon">alart me icon</string>
+    <string name="volt_meter">volt meter</string>
+    <string name="temaparature_meter">temaparature meter</string>
+    <string name="health">Health</string>
+    <string name="temparature">temparature</string>
+    <string name="voltage">Voltage</string>
+</resources>

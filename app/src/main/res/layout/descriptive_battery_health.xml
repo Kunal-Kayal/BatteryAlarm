@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding= "utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3333" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6666" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+    <ImageView
+        android:id="@+id/imageView_thermometer"
+        android:layout_width="80dp"
+        android:contentDescription="@string/temaparature_meter"
+        android:layout_height="80dp"
+        android:src ="@drawable/ic_temp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ImageViewVolameter"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src = "@drawable/ic_volt"
+        android:contentDescription="@string/volt_meter"
+        android:progressDrawable="@drawable/circular_progress_bat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/lower_description"
+        android:text="@string/health"
+        app:layout_constraintEnd_toEndOf="@+id/textView_health"
+        app:layout_constraintTop_toBottomOf="@id/textView_health"
+        app:layout_constraintStart_toStartOf="@+id/textView_health" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/lower_description"
+        android:text="@string/temparature"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_thermometer"
+        app:layout_constraintStart_toStartOf="@+id/imageView_thermometer"
+        app:layout_constraintTop_toBottomOf="@+id/textView_temp"/>
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/lower_description"
+        android:text="@string/voltage"
+        app:layout_constraintEnd_toEndOf="@+id/ImageViewVolameter"
+        app:layout_constraintStart_toStartOf="@+id/ImageViewVolameter"
+        app:layout_constraintTop_toBottomOf="@+id/textView_volt" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_alertme"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@android:color/holo_orange_light"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewalert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alert_me"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewalert"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:contentDescription="@string/alart_me_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewalert"
+                app:layout_constraintTop_toTopOf="@+id/textViewalert"
+                android:src="@drawable/ic_notification_on" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textView_health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="80%"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_health"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_health"
+        app:layout_constraintStart_toStartOf="@+id/imageView_health"/>
+    <TextView
+        android:id="@+id/textView_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="65\u00b0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_thermometer"
+        app:layout_constraintStart_toStartOf="@+id/imageView_thermometer"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_thermometer" />
+
+    <TextView
+        android:id="@+id/textView_volt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="-1.6V"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/ImageViewVolameter"
+        app:layout_constraintEnd_toEndOf="@+id/ImageViewVolameter"
+        app:layout_constraintStart_toStartOf="@+id/ImageViewVolameter" />
+    <ImageView
+        android:id="@+id/imageView_health"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/health_icon"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_health_good" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
