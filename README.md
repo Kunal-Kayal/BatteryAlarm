@@ -33,7 +33,7 @@ line to the header of a file, if they changed it substantially
 @copyright Copyright (c) <year>, <your name> (<your email address>)
 ```
 
-Please read the Code of Conduct. 
+Please read the [Code of Conduct](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/CODE_OF_CONDUCT.md). 
 This document offers some guidance to ensure
 BatteryAlarm participants can cooperate effectively in a positive 
 and inspiring atmosphere, and to explain how together we can 
@@ -63,7 +63,8 @@ For support, email connect2k2@hotmail.com.
 ## Remarks
 Google Play and the Google Play logo are 
 trademarks of Google Inc.
-[README.md](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/README.md), [SETUP.md](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/SETUP.md)
+[README.md](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/README.md), [SETUP.md](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/SETUP.md),
+[Code of Conduct](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/CODE_OF_CONDUCT.md)
 and [CONTRIBUTING.md](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/CONTRIBUTING.md) is made from [Nextcolud ripository](https://github.com/nextcloud/android)
 
   
