@@ -42,7 +42,7 @@ strengthen and support each other.
 Please review the guidelines for contributing to this repository.
 ## Start Contributing
 
-Make sure you read SETUP.md and CONTRIBUTING.md 
+Make sure you read [SETUP.md](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/SETUP.md) and [CONTRIBUTING.md](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/CONTRIBUTING.md) 
 before you start working on this project. 
 But basically: 
 
