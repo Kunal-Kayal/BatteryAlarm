@@ -63,6 +63,8 @@ For support, email connect2k2@hotmail.com.
 ## Remarks
 Google Play and the Google Play logo are 
 trademarks of Google Inc.
+[README.md](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/README.md), [SETUP.md](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/SETUP.md)
+and [CONTRIBUTING.md](https://github.com/Kunal-Kayal/BatteryAlarm/blob/master/CONTRIBUTING.md) is made from [Nextcolud ripository](https://github.com/nextcloud/android)
 
   
 
